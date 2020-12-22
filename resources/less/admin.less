@@ -1,0 +1,264 @@
+@alInputIconWidth: 20px;
+
+.ActionLogPage-mainControls {
+  .Button {
+    margin: 0 2px;
+
+    &:first-child {
+      margin-inline-start: 0;
+    }
+    &:last-child {
+      margin-inline-end: 0;
+    }
+  }
+}
+
+.ActionLogListSection {
+  margin-top: 20px;
+}
+
+.ActionLogListSection-content {
+  padding: 20px 0;
+}
+
+.ActionLogGrid {
+  margin: 15px 0;
+}
+
+.ActionLogGrid-item {
+  display: flex;
+  padding: 5px 14px;
+  border-radius: @border-radius;
+
+  &:hover {
+    background-color: @control-bg;
+  }
+}
+
+@media (max-width: 425px) {
+  .ActionLogGrid-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.ActionLogGrid-entryName {
+  padding: 4px 0;
+  margin-inline-start: 8px;
+
+  .Badge {
+    margin: -4px 5px 0 4px;
+  }
+}
+
+.ActionLogGrid-entryActor {
+  font-weight: 600;
+}
+
+.ActionLogGrid-Avatar {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+
+  .Avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    line-height: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.ActionLogGrid-entryDetails {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  white-space: nowrap;
+  color: @control-color;
+
+  > * {
+    &::after {
+      content: "";
+      margin: 0 3px;
+    }
+    &:last-child::after {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 700px) and (min-width: 426px) {
+  .ActionLogGrid-entryDetails {
+    flex-direction: column;
+    align-items: flex-end;
+
+    > * {
+      &::after {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.ActionLogGrid-itemContent {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 425px) {
+  .ActionLogGrid-itemContent {
+    display: block;
+  }
+
+  .ActionLogGrid-entryName {
+    margin: 0;
+  }
+
+  .ActionLogGrid-entryDetails {
+    justify-content: flex-start;
+  }
+}
+
+.ActionLogGrid-itemIcon {
+  margin-right: 17px;
+}
+
+.ActionLogGrid-itemIconMain {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  line-height: 28px;
+  border-radius: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > i {
+    font-size: 1.3rem;
+    color: @control-color;
+  }
+}
+
+.ActionLogGrid-itemIconSecondary {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  border-radius: 100%;
+  display: inline-block;
+  text-align: center;
+  position: absolute;
+  bottom: -2px;
+  right: -10px;
+}
+
+@media (max-width: 425px) {
+  .ActionLogGrid-itemIcon {
+    display: none;
+  }
+}
+
+.ActionLog-titleIcon {
+  float: right;
+}
+
+.ActionLogListSection-navigation {
+  display: flex;
+
+  > * {
+    .ActionLogPage-mainControls.Button();
+  }
+  .Select-caret {
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 425px) {
+  .ActionLogListSection-navigation {
+    flex-wrap: wrap;
+
+    > * {
+      margin: 1px;
+    }
+  }
+}
+
+.ActionLog-search {
+  width: 400px;
+  max-width: 100%;
+}
+
+.ActionLog-input {
+  display: flex;
+  align-items: center;
+}
+
+.ActionLog-inputIcon {
+  width: @alInputIconWidth;
+  text-align: center;
+  margin-right: -@alInputIconWidth;
+  padding-left: 13px;
+  z-index: 1;
+  color: @control-color;
+}
+
+.ActionLog-FormControl.hasIcon {
+  padding-left: calc(@alInputIconWidth + 13px);
+}
+
+.ActionLogSettings-logTypes > h3 {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background: @control-color;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  > span {
+    background: @control-bg;
+    padding-right: 9px;
+  }
+}
+
+.ActionLogSettings-logTypes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ActionLogSettings-resourceTypes {
+  width: 49%;
+  margin: 4px 0;
+  padding: 10px;
+  border-radius: 4px;
+  background: @body-bg;
+
+  > h4 {
+    margin-top: 0;
+  }
+}
+
+.ActionLogListSection-pagination {
+  > * {
+    margin: 0 2px;
+  }
+  > :first-child {
+    margin-inline-start: 0;
+  }
+  > :last-child {
+    margin-inline-end: 0;
+  }
+}
