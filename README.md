@@ -2,13 +2,18 @@
 
 > **Read-only archive of released versions of subasteve/flarum-action-log.** Not for installation: use [Packagist](https://packagist.org/packages/subasteve/flarum-action-log) or the [upstream repository](https://github.com/subasteve/flarum-action-log).
 
-**0** versions archived · Latest: [`v0.1.5`](https://github.com/flarchive/subasteve-flarum-action-log/tree/archive/v0.1.5) · License: `MIT` · Flarum: `^1.0.0`
+**6** versions archived · Latest: [`v0.1.5`](https://github.com/flarchive/subasteve-flarum-action-log/tree/archive/v0.1.5) · License: `MIT` · Flarum: `^1.0.0`
 
 ## Archived Versions
 
 | Version | Released | Flarum | Source |
 |---|---|---|---|
-| — | — | — | — |
+| `v0.1.0` | 2020-11-29 | `^0.1.0-beta.14` | [Browse](https://github.com/flarchive/subasteve-flarum-action-log/tree/archive/v0.1.0) |
+| `v0.1.1` | 2020-12-12 | `^0.1.0-beta.14` | [Browse](https://github.com/flarchive/subasteve-flarum-action-log/tree/archive/v0.1.1) |
+| `v0.1.2` | 2020-12-12 | `>=0.1.0-beta.15 <0.1.0-beta.16` | [Browse](https://github.com/flarchive/subasteve-flarum-action-log/tree/archive/v0.1.2) |
+| `v0.1.3` | 2020-12-22 | `>=0.1.0-beta.15 <0.1.0-beta.16` | [Browse](https://github.com/flarchive/subasteve-flarum-action-log/tree/archive/v0.1.3) |
+| `v0.1.4` | 2021-05-25 | `>=0.1.0-beta.14 <0.1.0-beta.17` | [Browse](https://github.com/flarchive/subasteve-flarum-action-log/tree/archive/v0.1.4) |
+| `v0.1.5` | 2021-09-30 | `^1.0.0` | [Browse](https://github.com/flarchive/subasteve-flarum-action-log/tree/archive/v0.1.5) |
 
 Catalog entry: [packages/subasteve-flarum-action-log.json](https://github.com/flarchive/archive-index/blob/main/packages/subasteve-flarum-action-log.json)
 
